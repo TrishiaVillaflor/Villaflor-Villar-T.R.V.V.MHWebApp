@@ -1,0 +1,10 @@
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\bin\Debug\TRVVMedicalHubDBase.dacpac
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\bin\Debug\TRVVMedicalHubDBase.dll
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\bin\Debug\TRVVMedicalHubDBase.pdb
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\TRVVMedicalHubDBase.sqlproj.AssemblyReference.cache
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\Model.xml
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\refactor.xml
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\postdeploy.sql
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\predeploy.sql
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\TRVVMedicalHubDBase.dll
+C:\T.R.V.V.MedicalHub\TRVVMedicalHub\TRVVMedicalHub\TRVVMedicalHubDBase\obj\Debug\TRVVMedicalHubDBase.pdb
