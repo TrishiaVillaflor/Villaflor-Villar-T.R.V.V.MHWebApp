@@ -1,0 +1,10 @@
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.dacpac
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.dll
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.pdb
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.sqlproj.AssemblyReference.cache
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\Model.xml
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\refactor.xml
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\postdeploy.sql
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\predeploy.sql
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.dll
+D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.pdb

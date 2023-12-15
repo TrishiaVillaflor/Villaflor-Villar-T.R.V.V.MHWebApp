@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[TRVVPatients]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[TRVVPatients] (Table)
+     Create
+       [dbo].[TRVVAdd] (Procedure)
+       [dbo].[TRVVDelete] (Procedure)
+       [dbo].[TRVVSearchById] (Procedure)
+       [dbo].[TRVVSearchByKeyword] (Procedure)
+       [dbo].[TRVVSearh] (Procedure)
+       [dbo].[TRVVUpdate] (Procedure)
+
+** Supporting actions

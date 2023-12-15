@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRVVMedicalHubWebApp", "TRVVMedicalHubWebApp\TRVVMedicalHubWebApp.csproj", "{62EF51BE-A228-4711-A28F-BF4165AF40ED}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TRVVmhData", "TRVVmhData\TRVVmhData.sqlproj", "{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62EF51BE-A228-4711-A28F-BF4165AF40ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EF51BE-A228-4711-A28F-BF4165AF40ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EF51BE-A228-4711-A28F-BF4165AF40ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EF51BE-A228-4711-A28F-BF4165AF40ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A7A572-0F3E-48AC-8394-C0B2D4E8349B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A46881B-F89E-4EBB-A7EC-B3D08D3A81BD}
+	EndGlobalSection
+EndGlobal

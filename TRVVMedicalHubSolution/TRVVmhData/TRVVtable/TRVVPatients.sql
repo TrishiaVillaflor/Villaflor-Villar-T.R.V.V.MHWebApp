@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[TRVVPatients]
+(
+	[Id] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Department] NVARCHAR(50) NOT NULL, 
+    [Illness] NVARCHAR(50) NOT NULL
+)
