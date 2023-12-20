@@ -71,4 +71,7 @@
   <ItemGroup>
     <None Include="TRVVmhData.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TRVVmhData.refactorlog" />
+  </ItemGroup>
 </Project>

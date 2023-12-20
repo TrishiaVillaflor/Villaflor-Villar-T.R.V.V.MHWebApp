@@ -24,8 +24,12 @@
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
                     <th scope="col">Department</th>
                     <th scope="col">Illness</th>
+                    <th scope="col">Medication</th>
+                    <th scope="col">Gaurdian</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -36,8 +40,12 @@
                         <tr>
                             <th scope="row">@item.PatientsId</th>
                             <td>@item.PatientsName</td>
+                            <td>@item.PatientsAddress</td>
+                            <td>@item.PatientsPhone</td>
                             <td>@item.PatientsDepartment</td>
                             <td>@item.PatientsIllness</td>
+                            <td>@item.PatientsMedication</td>
+                            <td>@item.PatientsGuardian</td>
                             <td>
                                 <form method="post" asp-route-id="@item.PatientsId" asp-page-handler="DeletePatients">
                                     <button class="btn btn-danger" type="submit">Delete</button>
@@ -59,11 +67,23 @@
             <label for="Patients.PatientsName">Name</label>
             <input asp-for="Patients.PatientsName" />
 
+            <label for="Patients.PatientsAddress">Address</label>
+            <input asp-for="Patients.PatientsAddress" />
+
+            <label for="Patients.PatientsPhone">Phone</label>
+            <input asp-for="Patients.PatientsPhone" />
+
             <label for="Patients.PatientsDepartment">Department</label>
             <input asp-for="Patients.PatientsDepartment" />
 
             <label for="Patients.PatientsIllness">Illness</label>
             <input asp-for="Patients.PatientsIllness" />
+
+            <label for="Patients.PatientsMedication">Medication</label>
+            <input asp-for="Patients.PatientsMedication" />
+
+            <label for="Patients.PatientsGuardian">Guardian</label>
+            <input asp-for="Patients.PatientsGuardian" />
 
             <div class="form-actions">
                 <button class="btn btn-primary" type="submit">Create</button>
@@ -78,7 +98,7 @@
 <style>
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f8f;
     margin: 0;
     padding: 0;
 }

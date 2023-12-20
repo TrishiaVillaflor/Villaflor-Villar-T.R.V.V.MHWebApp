@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="TRVVmhData.dll" />
-			<Metadata Name="FileName" Value="D:\T.R.V.V. MEDICALHUB\TRVVMEDICALHUBSOLUTION\TRVVMHDATA\OBJ\DEBUG\TRVVMHDATA.DLL" />
+			<Metadata Name="FileName" Value="C:\T.R.V.V.MEDICALHUB\VILLAFLOR-VILLAR-T.R.V.V.MHWEBAPP\TRVVMEDICALHUBSOLUTION\TRVVMHDATA\OBJ\DEBUG\TRVVMHDATA.DLL" />
 			<Metadata Name="AssemblyName" Value="TRVVmhData" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -68,8 +68,8 @@
 				<Value><![CDATA[
 BEGIN
 SET NOCOUNT ON;
-		INSERT INTO [dbo].[TRVVPatients] ([Id], [Name], [Department], [Illness])
-		VALUES (@Id, @Name, @Department, @Illness)
+INSERT INTO [dbo].[TRVVPatients] ([Id], [Name], [Address], [Phone], [Department], [Illness], [Medication], [Guardian])
+		VALUES (@Id, @Name, @Address, @Phone, @Department, @Illness, @Medication, @Guardian)
 END]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -84,10 +84,22 @@ END]]></Value>
 					<References Name="[dbo].[TRVVPatients].[Name]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Department]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Guardian]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVAdd].[@Id]" />
@@ -96,10 +108,22 @@ END]]></Value>
 					<References Name="[dbo].[TRVVAdd].[@Name]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVAdd].[@Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVAdd].[@Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVAdd].[@Department]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVAdd].[@Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVAdd].[@Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVAdd].[@Guardian]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
@@ -121,6 +145,38 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVAdd].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVAdd].[@Address]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVAdd].[@Phone]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -167,6 +223,38 @@ END]]></Value>
 						</Relationship>
 					</Element>
 				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVAdd].[@Medication]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVAdd].[@Guardian]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
 			</Relationship>
 			<Relationship Name="Schema">
 				<Entry>
@@ -174,10 +262,10 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="281" />
+				<Property Name="Length" Value="473" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVAdd]&#xD;&#xA;&#x9;@Id nvarchar(50),&#xD;&#xA;&#x9;@Name nvarchar(50),&#xD;&#xA;&#x9;@Department nvarchar(50),&#xD;&#xA;&#x9;@Illness nvarchar(50)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVAdd]&#xD;&#xA;&#x9;@Id nvarchar(50),&#xD;&#xA;&#x9;@Name nvarchar(50),&#xD;&#xA;&#x9;@Address nvarchar (50),&#xD;&#xA;&#x9;@Phone nvarchar (50),&#xD;&#xA;&#x9;@Department nvarchar(50),&#xD;&#xA;&#x9;@Illness nvarchar(50),&#xD;&#xA;&#x9;@Medication nvarchar (50),&#xD;&#xA;&#x9;@Guardian nvarchar (50)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[TRVVDelete]">
@@ -269,6 +357,40 @@ END]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[TRVVPatients].[Address]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[TRVVPatients].[Phone]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
 					<Element Type="SqlSimpleColumn" Name="[dbo].[TRVVPatients].[Department]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
@@ -302,6 +424,40 @@ END]]></Value>
 						</Relationship>
 					</Element>
 				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[TRVVPatients].[Medication]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[TRVVPatients].[Guardian]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
 			</Relationship>
 			<Relationship Name="Schema">
 				<Entry>
@@ -317,8 +473,12 @@ BEGIN
 
 	SELECT TOP(1) [a].[Id] AS PatientsId
 		,[a].[Name] AS PatientsName
+		,[a].[Address] AS PatientsAddress
+		,[a].[Phone] AS PatientsPhone
 		,[a].[Department] AS PatientsDepartment
 		,[a].[Illness] AS PatientsIllness
+		,[a].[Medication] AS PatientsMedication
+		,[a].[Guardian] AS PatientsGuardian
 	FROM [dbo].[TRVVPatients] AS a
 	WHERE [a].[Id] = @Id;
 END]]></Value>
@@ -335,10 +495,22 @@ END]]></Value>
 					<References Name="[dbo].[TRVVPatients].[Name]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Department]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Guardian]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Id]" />
@@ -374,7 +546,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="308" />
+				<Property Name="Length" Value="460" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVSearchById]&#xD;&#xA;&#x9;@Id NVARCHAR(50) = NULL&#xD;&#xA;AS" />
@@ -390,8 +562,12 @@ BEGIN
 
 	SELECT [a].[Id] AS PatientsId
 		  ,[a].[Name] AS PatientsName
+		  ,[a].[Address] AS PatientsAddress
+		  ,[a].[Phone] AS PatientsPhone
 		  ,[a].[Department] AS PatientsDepartment
-		   ,[a].[Illness] AS PatientsIllness
+		  ,[a].[Illness] AS PatientsIllness
+		  ,[a].[Medication] AS PatientsMedication
+		  ,[a].[Guardian] AS PatientsGuardian
 	FROM [dbo].[TRVVPatients] AS a 
 	WHERE [a].[Name] like @Keyword
 	ORDER BY [a].[Name];
@@ -412,10 +588,22 @@ END]]></Value>
 					<References Name="[dbo].[TRVVPatients].[Name]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Department]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Guardian]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Name]" />
@@ -448,7 +636,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="409" />
+				<Property Name="Length" Value="568" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVSearchByKeyword]&#xD;&#xA;&#x9;@Keyword nvarchar(50) = NULL&#xD;&#xA;AS" />
@@ -461,8 +649,12 @@ BEGIN
 	SET NOCOUNT ON;
 	 SELECT [a].[Id] AS PatientsId
 		   ,[a].[Name] AS PatientsName
+		   ,[a].[Address] AS PatientsAddress
+		   ,[a].[Phone] AS PatientsPhone
 		   ,[a].[Department] AS PatientsDepartment
 		   ,[a].[Illness] AS PatientsIllness
+		   ,[a].[Medication] AS PatientsMedication
+		   ,[a].[Guardian] AS PatientsGuardian
 	FROM [dbo].[TRVVPatients] AS a;
 
 	END]]></Value>
@@ -479,10 +671,22 @@ BEGIN
 					<References Name="[dbo].[TRVVPatients].[Name]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Department]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Guardian]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Schema">
@@ -491,7 +695,7 @@ BEGIN
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="259" />
+				<Property Name="Length" Value="423" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVSearh]&#xD;&#xA;&#x9;AS" />
@@ -504,8 +708,13 @@ BEGIN
 	SET NOCOUNT ON;
 	UPDATE [dbo].[TRVVPatients]
 	SET [Name] = @Name, 
-	[Department] = @Department, 
-	[Illness] = @Illness
+	[Department] = @Department,
+	[Address] = @Address,
+	[Phone] = @Phone,
+	[Illness] = @Illness,
+	[Medication] = @Medication,
+	[Guardian] = @Guardian
+	
 	WHERE [Id] = @Id
 	
 	END]]></Value>
@@ -528,10 +737,34 @@ BEGIN
 					<References Name="[dbo].[TRVVUpdate].[@Department]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVUpdate].[@Address]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Phone]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVUpdate].[@Phone]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Illness]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVUpdate].[@Illness]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVUpdate].[@Medication]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVPatients].[Guardian]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[TRVVUpdate].[@Guardian]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[TRVVPatients].[Id]" />
@@ -559,6 +792,38 @@ BEGIN
 				</Entry>
 				<Entry>
 					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVUpdate].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVUpdate].[@Address]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVUpdate].[@Phone]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -605,6 +870,38 @@ BEGIN
 						</Relationship>
 					</Element>
 				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVUpdate].[@Medication]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[TRVVUpdate].[@Guardian]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
 			</Relationship>
 			<Relationship Name="Schema">
 				<Entry>
@@ -612,10 +909,10 @@ BEGIN
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="297" />
+				<Property Name="Length" Value="505" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVUpdate]&#xD;&#xA;&#x9;@Id nvarchar (50),&#xD;&#xA;&#x9;@Name nvarchar (50),&#xD;&#xA;&#x9;@Department nvarchar (50),&#xD;&#xA;&#x9;@Illness nvarchar (50)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[TRVVUpdate]&#xD;&#xA;&#x9;@Id nvarchar (50),&#xD;&#xA;&#x9;@Name nvarchar (50),&#xD;&#xA;&#x9;@Address nvarchar (50),&#xD;&#xA;&#x9;@Phone nvarchar (50),&#xD;&#xA;&#x9;@Department nvarchar (50),&#xD;&#xA;&#x9;@Illness nvarchar (50),&#xD;&#xA;&#x9;@Medication nvarchar (50),&#xD;&#xA;&#x9;@Guardian nvarchar (50)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 	</Model>

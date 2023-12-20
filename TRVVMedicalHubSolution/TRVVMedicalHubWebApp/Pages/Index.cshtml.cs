@@ -45,8 +45,12 @@ namespace TRVVMedicalHubWebApp.Pages
 
             public string PatientsId { get; set; }
             public string PatientsName { get; set; }
+            public string PatientsAddress { get; set; }
+            public string PatientsPhone { get; set; }
             public string PatientsDepartment { get; set; }
             public string PatientsIllness { get; set; }
+            public string PatientsMedication { get; set; }
+            public string PatientsGuardian { get; set; }
         }
 
         public class SearchModel
@@ -83,8 +87,12 @@ namespace TRVVMedicalHubWebApp.Pages
                 var parameters = new DynamicParameters();
                 parameters.Add("@Id", Patients.PatientsId, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Name", Patients.PatientsName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Address", Patients.PatientsAddress, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Phone", Patients.PatientsPhone, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Department", Patients.PatientsDepartment, DbType.String, ParameterDirection.Input);
                 parameters.Add("Illness", Patients.PatientsIllness, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Medication", Patients.PatientsMedication, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Guardian", Patients.PatientsGuardian, DbType.String, ParameterDirection.Input);
                 using var conn = new SqlConnection(_config.GetConnectionString("TRVV"));
                 conn.Execute("[dbo].[TRVVAdd]",
                     parameters,
@@ -133,8 +141,12 @@ namespace TRVVMedicalHubWebApp.Pages
                 var parameters = new DynamicParameters();
                 parameters.Add("@Id", Patients.PatientsId, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Name", Patients.PatientsName, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Address", Patients.PatientsAddress, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Phone", Patients.PatientsPhone, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Department", Patients.PatientsDepartment, DbType.String, ParameterDirection.Input);
                 parameters.Add("@Illness", Patients.PatientsIllness, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Medication", Patients.PatientsMedication, DbType.String, ParameterDirection.Input);
+                parameters.Add("@Guardian", Patients.PatientsGuardian, DbType.String, ParameterDirection.Input);
                 using var conn = new SqlConnection(_config.GetConnectionString("TRVV"));
                 conn.Execute("[dbo].[TRVVUpdate]",
                     parameters,

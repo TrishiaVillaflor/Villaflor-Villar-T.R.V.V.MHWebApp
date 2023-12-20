@@ -8,3 +8,13 @@ D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\postdeploy.sq
 D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\predeploy.sql
 D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.dll
 D:\T.R.V.V. MedicalHub\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.pdb
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.dacpac
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.dll
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\bin\Debug\TRVVmhData.pdb
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.sqlproj.AssemblyReference.cache
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\Model.xml
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\refactor.xml
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\postdeploy.sql
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\predeploy.sql
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.dll
+C:\T.R.V.V.MedicalHub\Villaflor-Villar-T.R.V.V.MHWebApp\TRVVMedicalHubSolution\TRVVmhData\obj\Debug\TRVVmhData.pdb

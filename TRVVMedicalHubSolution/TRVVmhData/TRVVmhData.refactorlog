@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ad294895-978c-47fe-8de0-8c06150f4cd0" ChangeDateTime="12/17/2023 09:06:32">
+    <Property Name="ElementName" Value="[dbo].[TRVVPatients].[Contact Person in case of EM]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TRVVPatients]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Contact Person in case of E" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75546258-f8cf-4820-a74b-28a27a0f7f65" ChangeDateTime="12/17/2023 09:06:48">
+    <Property Name="ElementName" Value="[dbo].[TRVVPatients].[Contact Person in case of E]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TRVVPatients]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Contact Person in case of Emergency" />
+  </Operation>
+</Operations>
